@@ -28,3 +28,4 @@ print("Segmentos registrados en la base de datos:")
 for seg in segmentos:
     print(seg)
 
+
