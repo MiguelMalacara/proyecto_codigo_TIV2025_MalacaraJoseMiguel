@@ -56,7 +56,7 @@ class AppPavimento:
 
     def vista_consulta_segmentos(self):
         st.title("🔍 Consulta de segmentos")
-        condicion = st.text_input("Condición SQL (opcional):", placeholder="Ej: needs_maintenance = 1")
+        condicion = st.text_input("Condición SQL:", placeholder="Ej: needs_maintenance = 1")
         try:
             data = database.get_segments(condicion if condicion else None)
             df = pd.DataFrame(data)
